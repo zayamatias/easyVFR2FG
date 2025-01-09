@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Basic flight recording configuration
+ -->
+
+<PropertyList>
+    <generic>
+        <input>
+            <line_separator>newline</line_separator>
+            <var_separator>tab</var_separator>
+            <chunk>
+                <node>/position/latitude-deg</node>
+                <name>latitude</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/position/longitude-deg</node>
+                <name>longitude</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/velocities/airspeed-kt</node>
+                <name>IAS</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/orientation/heading-deg</node>
+                <name>Heading</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/position/altitude-ft</node>
+                <name>Altitude</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/position/ground-elev-m</node>
+                <name>Ground Elevation (Meters)</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/orientation/pitch-deg</node>
+                <name>Pitch Degrees</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/orientation/pitch-rate-degps</node>
+                <name>Not Sure About it</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/orientation/roll-deg</node>
+                <name>Roll Degrees</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/orientation/roll-rate-degps</node>
+                <name>Roll Degrees rate</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/orientation/yaw-rate-degps</node>
+                <name>Yaw Rate</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+            <chunk>
+                <node>/position/altitude-agl-ft</node>
+                <name>AGLS</name>
+                <type>float</type>
+                <format>%03.10f</format>
+            </chunk>
+        </input>
+    </generic>
+</PropertyList>
